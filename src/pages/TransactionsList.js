@@ -2,7 +2,7 @@ import { useState, useEffect, useContext,useCallback} from "react";
 import { AuthContext } from "../context/AuthContext";
 import TransactionItem from "../components/TransactionItem";
 import AddTransaction from "./AddTransaction";
-
+const API_URL = process.env.REACT_APP_API_URL;
 
 export default function TransactionsList() {
   const { token } = useContext(AuthContext);
@@ -10,7 +10,7 @@ export default function TransactionsList() {
 
   const fetchTransactions = useCallback(async () => {
     try{
-    const res = await fetch("http://localhost:8080/api/transactions", {
+    const res = await fetch(`${API_URL}/api/transactions`, {
       headers: { Authorization: `Bearer ${token}` },
     });
     if (!res.ok)
@@ -23,7 +23,7 @@ export default function TransactionsList() {
   },[token]);
 
   const handleDelete = async (id) => {
-    await fetch(`http://localhost:8080/api/transactions/${id}`, {
+    await fetch(`${API_URL}/api/transactions/${id}`, {
       method: "DELETE",
       headers: { Authorization: `Bearer ${token}` },
     });

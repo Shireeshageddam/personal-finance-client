@@ -6,6 +6,8 @@ import SummaryCard from "../components/SummaryCard";
 import CategoryPieChart from "../components/Charts/CategoryPieChart";
 import MonthlyBarChart from "../components/Charts/MonthlyBarChart";
 import { useNavigate } from "react-router-dom";
+const API_URL = process.env.REACT_APP_API_URL;
+
 
 export default function Dashboard() {
   const { token, logout,user } = useContext(AuthContext);
@@ -23,9 +25,11 @@ export default function Dashboard() {
   useEffect(() => {
     if (!token) return;
 
+
+
     const fetchTransactions = async () => {
       try {
-        const res = await fetch("http://localhost:8080/api/transactions", {
+        const res = await fetch(`${API_URL}/api/transactions`, {
           headers: {
             Authorization: "Bearer " + token,
           },

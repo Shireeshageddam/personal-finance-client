@@ -4,9 +4,10 @@ import { Link } from "react-router-dom";
 export default function Register() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const API_URL = process.env.REACT_APP_API_URL;
 
   const handleRegister = async () => {
-    const res = await fetch("http://localhost:8080/api/auth/register", {
+    const res = await fetch(`${API_URL}/api/auth/register`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password }),
