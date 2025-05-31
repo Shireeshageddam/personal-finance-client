@@ -1,40 +1,70 @@
-# Personal Finance Client
+# Personal Finance Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A full-stack personal finance tracking web app built with:
 
-## Available Scripts
+- React.js + Tailwind CSS (frontend)
+- Spring Boot + PostgreSQL (backend)
+- Recharts for data visualization
+- JWT authentication
+- Deployed on Vercel & Render
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Features
 
-Runs the app in development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Register/Login (JWT auth)
+- Add income & expenses
+- View transaction history
+- Dashboard charts (bar, pie)
+- Mobile responsive
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in interactive watch mode.\
-See [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more info.
+- **Frontend:** [https://your-frontend.vercel.app](https://your-frontend.vercel.app)
+- **Backend API:** [https://your-backend.onrender.com](https://your-backend.onrender.com)
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for best performance.
+## Screenshots
 
-### `npm run eject`
+### Login Page
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![Login Screenshot](./screenshots/login.png)
 
-## Learn More
+### Dashboard Page
 
-- [Create React App Docs](https://facebook.github.io/create-react-app/docs/getting-started)
-- [React Docs](https://reactjs.org/)
-- [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-- [Bundle Size Analysis](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-- [Making a PWA](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-- [Advanced Configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-- [Deployment Guide](https://facebook.github.io/create-react-app/docs/deployment)
-- [Troubleshooting Build](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Dashboard Screenshot](./screenshots/Dashboard.png)
+
+### Add Transaction Page
+
+![Transaction Screenshot](./screenshots/Transaction.png)
+
+### Add home Page
+
+![home Screenshot](./screenshot/home.png)
+
+---
+
+## Technologies Used
+
+- **Frontend:** React.js, Tailwind CSS, Recharts
+- **Backend:** Java Spring Boot, PostgreSQL, JWT
+- **Deployment:** Vercel (frontend), Render (backend)
+
+---
+
+## Setup Instructions (For Devs)
+
+```bash
+# Frontend
+cd client
+npm install
+npm run dev
+or npm start
+
+# Backend
+cd server
+./mvnw spring-boot:run
+```
