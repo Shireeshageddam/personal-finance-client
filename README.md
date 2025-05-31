@@ -31,19 +31,19 @@ A full-stack personal finance tracking web app built with:
 
 ### Login Page
 
-![Login Screenshot](./screenshots/login.png)
+![Login Screenshot](./Screenshots/login.png)
 
 ### Dashboard Page
 
-![Dashboard Screenshot](./screenshots/Dashboard.png)
+![Dashboard Screenshot](./Screenshots/Dashboard.png)
 
 ### Add Transaction Page
 
-![Transaction Screenshot](./screenshots/Transaction.png)
+![Transaction Screenshot](./Screenshots/Transaction.png)
 
 ### Add home Page
 
-![home Screenshot](./screenshot/home.png)
+![home Screenshot](./Screenshot/home.png)
 
 ---
 
