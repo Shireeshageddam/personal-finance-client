@@ -43,7 +43,7 @@ A full-stack personal finance tracking web app built with:
 
 ### Add home Page
 
-![home Screenshot](./Screenshot/home.png)
+![home Screenshot](./Screenshots/home.png)
 
 ---
 
