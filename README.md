@@ -22,8 +22,8 @@ A full-stack personal finance tracking web app built with:
 
 ## Live Demo
 
-- **Frontend:** [https://your-frontend.vercel.app](https://your-frontend.vercel.app)
-- **Backend API:** [https://your-backend.onrender.com](https://your-backend.onrender.com)
+- **Frontend:** [https://personal-finance-client.vercel.app/](https://personal-finance-client.vercel.app/)
+- **Backend API:** [https://personal-finance-server-z51x.onrender.com](https://personal-finance-server-z51x.onrender.com)
 
 ---
 
